@@ -41,3 +41,11 @@ Explanation
 - a reverse proxy is  used for load balancing. A popular website handling millions  of users every day is unlikely to be   able to handle the traffic with a single server. A reverse proxy can balance a large amount of   incoming requests by distributing the  traffic to a large pool of web servers,   and effectively preventing any single  one of them from becoming overloaded. Note that this assumes that the reverse  proxy can handle the incoming traffic. Services like Cloudflare put reverse proxy servers  in hundreds of locations all around the world. This puts the reverse proxy close  to the users and at the same time   provides a large amount of processing capacity.
 - a reverse proxy caches static content. A piece of content could be cached on  the reverse proxy for a period of time. If the same piece of content is  requested again from the reverse proxy,   the locally cached version  could be quickly returned.
 - a reverse proxy can handle SSL encryption. SSL handshake is computationally expensive. A reverse proxy can free up the origin  servers from these expensive operations.   Instead of handling SSL for all clients,   a website only needs to handle SSL handshake  from a small number of reverse proxies. Reverse proxies are everywhere.
+
+### Simple Comparison
+- Forward Proxy:
+    - Acts on behalf of the client.
+    - Helps clients reach websites.
+- Reverse Proxy:
+    - Acts on behalf of the server.
+    - Helps servers manage client requests.
