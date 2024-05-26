@@ -4,6 +4,17 @@
 
 ### Forward Proxy
 - A forward proxy is a server that sits between  a group of client machines and the internet. When those clients make requests to websites  on the internet, the forward proxy acts as a   middleman intercepts those requests and talks to  web servers on behalf of those client machines.
+  
+### Diagram
+```text
+💻 -> 🌐 -> 📄
+💻 <- 🌐 <- 📄
+
+Explanation
+💻 Client: The user or device making the request.
+🌐 Forward Proxy: The server that forwards the request from the client to the internet and returns the response from the internet to the client.
+📄 Internet: The target resource or website that the client wants to access.
+```
 
 ### Why would anyone want to do that?
 - a forward proxy protects  the client’s online identity. By using a forward proxy to connect to a website,   the IP address of the client  is hidden from the server. Only the IP address of the proxy is visible. It would be harder to trace back to the client.
@@ -13,6 +24,17 @@
 ### Reverse Proxy
 - A reverse proxy sits between the  internet and the web servers. 
 - It intercepts the requests from clients and  talks to the web server on behalf of the clients.
+
+### Diagram
+```text
+💻 -> 🌐 -> 🖥️
+💻 <- 🌐 <- 🖥️
+
+Explanation
+💻 Client: The user or device making the request.
+🌐 Reverse Proxy: The server that receives the client's request and forwards it to the appropriate backend server. It then sends the response from the server back to the client.
+🖥️ Server: The backend server that processes the request and returns the response.
+```
 
 ### Why would a website use reverse proxy?
 - a reverse proxy could  be used to protect a website. The website’s IP addresses are hidden behind the  reverse proxy and are not revealed to the clients. This makes it much harder to target  a DDoS attack against a website.
